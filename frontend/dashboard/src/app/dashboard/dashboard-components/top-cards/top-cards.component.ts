@@ -20,7 +20,7 @@ export class TopCardsComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getData('/top-cards/top-cards-data.json').subscribe(
+    this.dataService.getData('top-cards-data.json').subscribe(
       (data) => {
         this.apiTopCards = JSON.parse(data)
       },

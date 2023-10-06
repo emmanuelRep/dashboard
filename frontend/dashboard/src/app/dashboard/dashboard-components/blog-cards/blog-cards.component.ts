@@ -17,7 +17,7 @@ export class BlogCardsComponent implements OnInit {
 
   ngOnInit(): void {
     //fetch data on component initialization
-    this.dataService.getData('blog-cards/blog-cards-data.json').subscribe(
+    this.dataService.getData('blog-cards-data.json').subscribe(
 
       (data) => {
         

@@ -19,7 +19,7 @@ export class FeedsComponent implements OnInit {
   } */
 
   ngOnInit(): void {
-    this.dataService.getData('feeds/feeds-data.json').subscribe(
+    this.dataService.getData('feeds-data.JSON').subscribe(
       (data) => {
         this.apiFeedData = JSON.parse(data)
       },

@@ -19,7 +19,7 @@ export class TopCustomersComponent implements OnInit {
   constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataService.getData('/top-customers/top-customers-data.json').subscribe(
+    this.dataService.getData('top-customers-data.json').subscribe(
       (data) => {
         this.apiCustomerData = JSON.parse(data)
       },

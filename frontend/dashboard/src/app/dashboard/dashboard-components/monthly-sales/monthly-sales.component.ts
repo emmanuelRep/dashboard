@@ -148,7 +148,7 @@ export class MonthlySalesComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.dataService.getData('monthly-sales/monthly-sales-data.json').subscribe(
+    this.dataService.getData('monthly-sales-data.JSON').subscribe(
       (data) => {
         this.apiMonthlySalesData = JSON.parse(data)
 
