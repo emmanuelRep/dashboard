@@ -1,0 +1,13 @@
+<div class="row" *ngIf="apiCardData">
+    <div class="col-md-6 col-lg-3" *ngFor='let card of apiCardData'>
+        <div class="card">
+            <img [src]="card.image" alt="blogs" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">{{card.title}}</h4>
+                <h6 class="card-subtitle">{{card.subtitle}}</h6>
+                <p class="mt-3">{{card.subtext}}</p>
+                <button type="button" class="btn btn-primary">Read More</button>
+            </div>
+        </div>
+    </div>
+</div>

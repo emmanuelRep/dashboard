@@ -1,0 +1,37 @@
+<div class="card" *ngIf="apiCustomerData">
+    <div class="card-body">
+        <!-- title -->
+                <h4 class="card-title">Top Customers by Exposure</h4>
+
+        <!-- title -->
+        <div class="table-responsive">
+            <table class="table align-middle mb-0">
+                <thead>
+                    <tr>
+                        <th class="text-dark font-medium fs-4">Customer Name</th>
+                        <th class="text-dark font-medium fs-4">AR Balance</th>
+                        <th class="text-dark font-medium fs-4">% of Total AR</th>
+                        <th class="text-dark font-medium fs-4">Credit Limit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let tc of apiCustomerData'>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <div class="ms-3">
+                                    <h5 class="mb-0 font-medium">{{tc.name}}</h5>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="fs-4">{{tc.arBalance}}</td>
+                        <td class="fs-4">{{tc.percentOfTotalAr}}</td>
+                        <td>
+                            <h5 class="mb-0 fw-normal">{{tc.creditLimit}}</h5>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

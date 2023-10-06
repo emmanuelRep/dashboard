@@ -1,0 +1,24 @@
+# name: Unit Tests
+
+# on:
+#   pull_request:
+#     branches:
+#       - '*'
+
+# jobs:
+#   unit-tests:
+#     name: Unit Tests
+#     runs-on: ubuntu-latest
+#     steps:
+#       # Checks out this repository's code.
+#       - uses: actions/checkout@v3
+#       # Sets up the node environment.
+#       - uses: actions/setup-node@v3
+#         with:
+#           node-version: 18.x
+#           cache: 'npm'
+
+#       - name: Install Dependencies
+#         run: npm ci
+
+#       - run: npm run test
